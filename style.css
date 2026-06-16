@@ -17,7 +17,7 @@
 
 /* Estilização dos links */
 .menu-navegacao a {
-    color: #f0ead6; /* Cor de pergaminho/osso antigo */
+    color: #e6c65e; /* Cor de pergaminho/osso antigo */
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace; /* Uma fonte que lembra algo mais rústico */
     font-weight: bold;
@@ -26,7 +26,6 @@
     border-radius: 4px;
     transition: all 0.3s ease; /* Efeito suave ao passar o mouse */
 }
-
 /* Efeito quando passa o mouse por cima (Hover) */
 .menu-navegacao a:hover {
     background-color: #8b0000; /* Vermelho sangue escuro */
