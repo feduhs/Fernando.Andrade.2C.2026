@@ -87,3 +87,26 @@ main img {
     display: block;
     margin: 20px auto 0 auto; 
 }
+
+/* Estilização do Rodapé / Footer */
+footer {
+    background-color: #1a1a1a; /* Mesmo fundo escuro do header */
+    color: #f0ead6; /* Cor de osso antigo para o texto */
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px; /* Garante um espaço entre o conteúdo (main) e o rodapé */
+    border-top: 5px solid #8b0000; /* Linha vermelha sangue no topo do rodapé */
+    font-family: 'VT323', monospace; /* Fonte estilo Pixel */
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* Um detalhe menor para o texto de desenvolvimento */
+footer .sub-footer {
+    font-size: 1rem;
+    color: #8c8476; /* Um tom mais escuro e sutil */
+}
