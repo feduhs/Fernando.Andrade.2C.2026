@@ -158,3 +158,9 @@ footer .sub-footer {
     font-size: 1rem;
     color: #8c8476; /* Um tom mais escuro e sutil */
 }
+
+/* Estilos extras para a página de itens */
+.ficha-tecnica strong {
+    color: #8b0000; /* Deixa o nome dos itens em vermelho sangue */
+    font-size: 1.1rem;
+}
