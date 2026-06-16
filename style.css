@@ -10,14 +10,14 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;asc
+    display: flex;
     justify-content: center; /* Centraliza o menu na tela */
     gap: 20px; /* Espaço entre os links */
 }
 
 /* Estilização dos links */
 .menu-navegacao a {
-    color: #e6d9b1; /* Cor de pergaminho/osso antigo */
+    color: #f0ead6; /* Cor de pergaminho/osso antigo */
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace; /* Uma fonte que lembra algo mais rústico */
     font-weight: bold;
@@ -26,9 +26,10 @@
     border-radius: 4px;
     transition: all 0.3s ease; /* Efeito suave ao passar o mouse */
 }
+
 /* Efeito quando passa o mouse por cima (Hover) */
 .menu-navegacao a:hover {
     background-color: #8b0000; /* Vermelho sangue escuro */
-    color: #6b6666;
+    color: #fff;
     text-shadow: 0px 0px 8px #ff0000;
 }
