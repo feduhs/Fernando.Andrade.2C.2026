@@ -1,35 +1,81 @@
-/* Configuração geral do Menu */
-.menu-navegacao {
-    background-color: #1a1a1a; /* Um fundo escuro bem vibe Isaac */
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+/* Configurações Gerais do Site */
+body {
+    background-color: #c2b29c; /* Bege escuro/cor de pergaminho antigo estilo Isaac */
+    color: #2b2621; /* Cor do texto (um marrom bem escuro, quase preto, para contrastar bem) */
+    font-family: 'Special Elite', serif; /* Fonte para os textos gerais */
+    margin: 0;
+    padding: 0;
 }
 
-/* Alinha os itens em linha e remove as bolinhas da lista */
+/* Estilização do Topo / Header */
+header {
+    background-color: #1a1a1a; /* Fundo escuro para destacar o título */
+    padding: 40px 20px; /* Dá mais espaço em cima e embaixo do título */
+    text-align: center; /* Centraliza o título na tela */
+    border-bottom: 5px solid #8b0000; /* Linha vermelha sangue grossa embaixo do header */
+}
+
+header h1 {
+    font-family: 'VT323', monospace; /* Fonte estilo Pixel Art para o título principal */
+    font-size: 4.5rem; /* Deixa o título bem grande */
+    color: #f0ead6; /* Cor de osso antigo para o texto */
+    margin: 0;
+    text-transform: uppercase; /* Deixa tudo em letras maiúsculas */
+    letter-spacing: 4px; /* Espaçamento legal entre as letras */
+    text-shadow: 3px 3px 0px #000; /* Sombra preta marcada, bem estilo jogo */
+}
+
+/* MENU DE NAVEGAÇÃO (Mantendo o que fizemos antes, apenas ajustando as fontes) */
+.menu-navegacao {
+    background-color: #2b2621; /* Um marrom bem escuro que combina com o bege */
+    padding: 12px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .menu-navegacao ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Centraliza o menu na tela */
-    gap: 20px; /* Espaço entre os links */
+    justify-content: center;
+    gap: 25px;
 }
 
-/* Estilização dos links */
 .menu-navegacao a {
-    color: #f0ead6; /* Cor de pergaminho/osso antigo */
+    color: #c2b29c; /* Links na cor do fundo para combinar */
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace; /* Uma fonte que lembra algo mais rústico */
+    font-family: 'VT323', monospace; /* Fonte pixel para o menu também */
+    font-size: 1.5rem; /* Ajustado por conta da nova fonte */
     font-weight: bold;
-    font-size: 1.1rem;
-    padding: 8px 16px;
+    padding: 6px 12px;
     border-radius: 4px;
-    transition: all 0.3s ease; /* Efeito suave ao passar o mouse */
+    transition: all 0.3s ease;
 }
 
-/* Efeito quando passa o mouse por cima (Hover) */
 .menu-navegacao a:hover {
-    background-color: #8b0000; /* Vermelho sangue escuro */
+    background-color: #8b0000; /* Vermelho escuro ao passar o mouse */
     color: #fff;
-    text-shadow: 0px 0px 8px #ff0000;
+}
+
+/* Estilização do Conteúdo Principal */
+main {
+    max-width: 800px;
+    margin: 40px auto; /* Centraliza o bloco de conteúdo na tela */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Um fundo branco bem transparente para dar leitura */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #5c1d1d; /* Título interno em um tom marrom avermelhado */
+}
+
+main img {
+    max-width: 100%; /* Garante que a imagem não saia da tela */
+    height: auto;
+    border: 4px solid #2b2621; /* Borda escura na imagem */
+    display: block;
+    margin: 20px auto; /* Centraliza a imagem */
 }
