@@ -1,25 +1,35 @@
-body {
-    background-color: #121212;
-    color: #0d830d;
-    font-family: sans-serif;
+/* Configuração geral do Menu */
+.menu-navegacao {
+    background-color: #1a1a1a; /* Um fundo escuro bem vibe Isaac */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
-header {
-    color: #0d830d;
-    border-bottom: 2px solid #0d8300;
-    padding: 10 px;
+
+/* Alinha os itens em linha e remove as bolinhas da lista */
+.menu-navegacao ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza o menu na tela */
+    gap: 20px; /* Espaço entre os links */
 }
-nav a {
-    color: #0ff;
+
+/* Estilização dos links */
+.menu-navegacao a {
+    color: #f0ead6; /* Cor de pergaminho/osso antigo */
     text-decoration: none;
+    font-family: 'Courier New', Courier, monospace; /* Uma fonte que lembra algo mais rústico */
     font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Efeito suave ao passar o mouse */
 }
-main {
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-}
-footer {
-    text-align: center;
-    font-size: 12px;
-    color: gray;
+
+/* Efeito quando passa o mouse por cima (Hover) */
+.menu-navegacao a:hover {
+    background-color: #8b0000; /* Vermelho sangue escuro */
+    color: #fff;
+    text-shadow: 0px 0px 8px #ff0000;
 }
