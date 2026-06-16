@@ -59,7 +59,7 @@ header h1 {
 
 /* Estilização do Conteúdo Principal */
 main {
-    max-width: 900px; /* Aumentei um pouquinho para caber melhor as duas colunas */
+    max-width: 950px; /* Aumentei um pouquinho mais para dar bastante espaço para o texto na direita */
     margin: 40px auto; 
     padding: 30px;
     background-color: #e6dac7; 
@@ -73,30 +73,43 @@ main h2 {
     font-size: 2.5rem;
     color: #5c1d1d; 
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-/* Nova classe que ativa o layout em colunas */
+/* Container Flexbox que coloca os elementos lado a lado */
 .conteudo-principal {
     display: flex;
-    gap: 30px; /* Espaço de 30px entre o texto e a imagem */
-    align-items: center; /* Alinha o texto e a imagem verticalmente pelo centro */
+    gap: 35px; /* Espaço entre a imagem (esquerda) e o texto (direita) */
+    align-items: flex-start; /* Alinha os blocos pelo topo para o texto começar junto com a imagem */
 }
 
-/* Estilo para a coluna do texto */
+/* Coluna da Imagem (Esquerda) */
+.imagem-introducao {
+    flex: 0 0 350px; /* Define um tamanho fixo de 350px para a imagem não achatar */
+}
+
+main img {
+    width: 100%; 
+    height: auto;
+    border: 4px solid #2b2621; 
+    display: block;
+}
+
+/* Coluna do Texto (Direita) */
 .texto-introducao {
-    flex: 1; /* Faz o texto ocupar o espaço disponível proporcionalmente */
+    flex: 1; /* Faz o texto se expandir e ocupar todo o resto do espaço do main */
 }
 
 .texto-introducao h3 {
     color: #5c1d1d;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-family: 'VT323', monospace;
 }
 
 .texto-introducao ul {
-    list-style-type: square; /* Deixa os marcadores da lista quadradinhos */
+    list-style-type: square; 
     padding-left: 20px;
     margin-bottom: 20px;
 }
@@ -109,31 +122,19 @@ main h2 {
 .texto-introducao p {
     line-height: 1.6;
     font-size: 1.1rem;
+    margin-top: 0;
 }
 
-/* Estilização específica do Hyperlink da Wikipédia */
+/* Link da Wikipédia */
 .link-wiki {
-    color: #8b0000; /* Vermelho escuro para destacar que é um link */
-    text-decoration: underline; /* Linha embaixo para o usuário saber que dá pra clicar */
+    color: #8b0000; 
+    text-decoration: underline; 
     font-weight: bold;
     transition: color 0.2s ease;
 }
 
 .link-wiki:hover {
-    color: #2b2621; /* Muda de cor quando passa o mouse por cima */
-}
-
-/* Estilo para a coluna da imagem */
-.imagem-introducao {
-    flex: 1; /* Faz a imagem dividir o espaço igualmente com o texto */
-}
-
-main img {
-    max-width: 100%; 
-    height: auto;
-    border: 4px solid #2b2621; 
-    display: block;
-    margin: 0 auto; /* Removeu o margin antigo e centraliza na própria coluna */
+    color: #2b2621; 
 }
 
 /* Estilização do Rodapé / Footer */
