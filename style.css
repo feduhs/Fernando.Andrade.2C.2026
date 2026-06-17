@@ -164,3 +164,35 @@ footer .sub-footer {
     color: #8b0000; /* Deixa o nome dos itens em vermelho sangue */
     font-size: 1.1rem;
 }
+
+/* Estilos específicos para a página de Personagens */
+
+.card-personagem {
+    border-left: 10px solid #5c1d1d; /* Uma barra lateral vermelha para dar destaque */
+    transition: transform 0.3s ease;
+}
+
+.card-personagem:hover {
+    transform: scale(1.02); /* Efeito de zoom leve ao passar o mouse */
+}
+
+.card-personagem h3 {
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    color: #8b0000;
+    margin-top: 0;
+}
+
+.tainted-info {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    border-left: 3px solid #2b2621;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* Deixando os nomes dos personagens mais impactantes */
+.info-personagem strong {
+    color: #2b2621;
+}
