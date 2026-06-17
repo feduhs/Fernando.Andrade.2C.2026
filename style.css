@@ -165,34 +165,56 @@ footer .sub-footer {
     font-size: 1.1rem;
 }
 
-/* Estilos específicos para a página de Personagens */
+/* SISTEMA DE ABAS - PERSONAGENS */
 
-.card-personagem {
-    border-left: 10px solid #5c1d1d; /* Uma barra lateral vermelha para dar destaque */
-    transition: transform 0.3s ease;
+/* Container dos botões */
+.menu-personagens {
+    display: flex;
+    flex-wrap: wrap; /* Se tiver muitos botões, eles quebram para a linha de baixo */
+    gap: 10px;
+    margin-top: 20px;
 }
 
-.card-personagem:hover {
-    transform: scale(1.02); /* Efeito de zoom leve ao passar o mouse */
-}
-
-.card-personagem h3 {
+/* Estilo padrão dos botões */
+.btn-personagem {
+    background-color: #2b2621; /* Marrom escuro */
+    color: #c2b29c; /* Cor de pergaminho */
+    border: 2px solid #1a1a1a;
+    padding: 8px 16px;
     font-family: 'VT323', monospace;
-    font-size: 2rem;
-    color: #8b0000;
-    margin-top: 0;
-}
-
-.tainted-info {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
     border-radius: 4px;
-    border-left: 3px solid #2b2621;
-    margin-top: 15px;
-    font-style: italic;
+    transition: all 0.2s ease;
 }
 
-/* Deixando os nomes dos personagens mais impactantes */
-.info-personagem strong {
-    color: #2b2621;
+/* Quando passa o mouse no botão */
+.btn-personagem:hover {
+    background-color: #5c1d1d;
+    color: #fff;
+}
+
+/* Estilo do botão que está selecionado no momento */
+.btn-personagem.ativo {
+    background-color: #8b0000; /* Vermelho sangue */
+    color: #fff;
+    border-color: #5c1d1d;
+    box-shadow: inset 0 0 5px #000;
+}
+
+/* LOGICA DE EXIBIÇÃO dos Cards */
+.card-personagem {
+    display: none; /* Por padrão, ESCONDE todos os personagens */
+    border-left: 10px solid #5c1d1d;
+}
+
+.card-personagem.ativo {
+    display: block; /* SÓ MOSTRA o personagem que tiver a classe 'ativo' */
+    animation: fadeIn 0.4s ease; /* Efeito suave de aparecimento */
+}
+
+/* Animação simples para o texto surgir suavemente */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
 }
