@@ -213,6 +213,15 @@ footer .sub-footer {
     animation: fadeIn 0.4s ease; /* Efeito suave de aparecimento */
 }
 
+.tainted-info {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+    border-left: 3px solid #2b2621;
+    margin-top: 15px;
+    font-style: italic;
+}
+
 /* Animação simples para o texto surgir suavemente */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(5px); }
